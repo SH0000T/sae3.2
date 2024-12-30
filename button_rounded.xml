@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00BCD4"/> <!-- Bleu cyan -->
+    <corners android:radius="16dp"/> <!-- Coins arrondis -->
+    <stroke android:color="#0288D1" android:width="2dp"/> <!-- Bordure cyan foncé -->
+</shape>

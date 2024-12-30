@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Adresse IP -->
+        <EditText
+            android:id="@+id/etIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse IP du serveur"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_rounded" />
+
+        <!-- Port -->
+        <EditText
+            android:id="@+id/etPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Port du serveur"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_rounded" />
+
+        <!-- Login -->
+        <EditText
+            android:id="@+id/etLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Login"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_rounded" />
+
+        <!-- Mot de passe -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_rounded" />
+
+        <!-- Bouton pour enregistrer un compte -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Créer un compte"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_rounded"
+            android:textColor="#FFFFFF" />
+
+        <!-- Bouton pour se connecter -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_rounded"
+            android:textColor="#FFFFFF" />
+
+        <!-- Bouton pour sélectionner un fichier -->
+        <Button
+            android:id="@+id/btnSelectFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner un fichier"
+            android:visibility="visible"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_rounded"
+            android:textColor="#FFFFFF" />
+
+        <!-- Bouton pour envoyer un fichier -->
+        <Button
+            android:id="@+id/btnSendFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoyer un fichier"
+            android:visibility="visible"
+            android:enabled="true"
+            android:background="@drawable/button_rounded"
+            android:textColor="#FFFFFF" />
+
+        <!-- Cadre pour afficher les logs -->
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/log_background"
+            android:text="Logs :"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
